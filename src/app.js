@@ -29,7 +29,7 @@ function validateHTTPMethods(req, res, next) {
   next();
 };
 
-app.use(cors({ origin: 'https://my-task-list-frontend.vercel.app/', credentials: true,}));
+app.use(cors({ origin: 'https://my-task-list-frontend.vercel.app', credentials: true,}));
 app.use(morgan('dev'));
 app.use(cookieParser());
 app.use(validateHTTPMethods);
